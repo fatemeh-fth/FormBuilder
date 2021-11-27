@@ -1,0 +1,29 @@
+:host {
+  margin-bottom: 1rem;
+  display: block;
+}
+
+label {
+  display: block;
+  font-family:'Times New Roman', Times, serif;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+.form {
+  margin: 50px 170px;
+}
+#city {
+  border-style: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+#city:hover{
+  background-color: #ddd;
+}
+
+#check{
+  display: flex;
+}

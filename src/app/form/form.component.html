@@ -1,0 +1,26 @@
+
+<div class="form">
+<div [ngSwitch]="type" >
+    <div *ngSwitchCase="'text'">
+        <label>{{label}}</label>
+        <input (change)="onFormChange($event)" type="text">
+    </div>
+
+    <div *ngSwitchCase="'textarea'">
+        <label>{{label}}</label>
+        <textarea (change)="onFormChange($event)"></textarea>
+    </div>
+
+    <div *ngSwitchCase="'select'">
+        <label>{{label}}</label>
+        <select (change)="onFormChange($event)" id="city">
+            <option *ngFor="let item of list" [value]="item.value">{{item.text}}</option>
+        </select>
+    </div>
+
+    <div *ngSwitchCase="'checkbox'" id="check">
+        <label>{{label}}</label>
+        <input (change)="onFormChange($event)" type="checkbox">
+    </div>
+</div>
+</div>
